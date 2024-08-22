@@ -1,6 +1,7 @@
 import MoviePage from "@/components/MoviePage";
 import { getMovieResponse } from "@/libs/api-libs";
 import { authUserSession } from "@/libs/auth-libs";
+import prisma from "@/libs/prisma";
 
 const Page = async ({ params: { id }, searchParams: { page = 1 } }) => {
   const genreData = await getMovieResponse(
