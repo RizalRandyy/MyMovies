@@ -9,7 +9,9 @@ const Navbar = async() => {
   return (
     <div className="flex flex-col md:flex-row items-center md:items-center justify-center md:justify-between p-5">
       <Title/>
-      <InputSearch user={user}/>
+      <div className="z-20">
+        <InputSearch user={user} />
+      </div>
     </div>
   )
 }
